@@ -1,0 +1,64 @@
+Deleting node pool agents-substrate...
+....................................................................................................done.
+Deleted [https://container.googleapis.com/v1/projects/PROJECT_ID/zones/europe-west4-a/clusters/substrate-smoke/nodePools/agents-substrate].
+Creating node pool agents-substrate...
+...........................................................................done.
+Created [https://container.googleapis.com/v1/projects/PROJECT_ID/zones/europe-west4-a/clusters/substrate-smoke/nodePools/agents-substrate].
+NAME              MACHINE_TYPE    DISK_SIZE_GB  NODE_VERSION
+agents-substrate  n4-standard-16  100           1.37.1-gke.3020000
+daemonset.apps "ate-local-ssd" deleted from kube-system namespace
+node/gke-substrate-smoke-agents-substrate-f880574c-1kfd condition met
+node/gke-substrate-smoke-agents-substrate-f880574c-2g3r condition met
+node/gke-substrate-smoke-agents-substrate-f880574c-bkdg condition met
+pod "atelet-t29wg" deleted from ate-system namespace
+pod "atelet-7pv7v" deleted from ate-system namespace
+pod "atelet-7qqp8" deleted from ate-system namespace
+Waiting for daemon set "atelet" rollout to finish: 1 of 3 updated pods are available...
+Waiting for daemon set "atelet" rollout to finish: 2 of 3 updated pods are available...
+daemon set "atelet" successfully rolled out
+pod "benchmark-worker-659c9c875f-246lr" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-28p74" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-2fmdb" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-4gh57" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-4k2bk" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-548cr" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-6wctk" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-9vnmn" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-b6qbp" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-b7k6b" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-b7x87" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-c6lm9" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-c6w5x" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-clcql" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-dclzx" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-dfg94" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-fhfns" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-g2872" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-grdb2" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-gvb7s" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-hvw2v" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-j9twx" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-jbxk4" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-jht27" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-jlvxh" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-jqjzm" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-jtcf9" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-k4rhp" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-lkpd7" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-nnclc" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-pczbj" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-pp2tm" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-q69hp" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-qgtdm" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-s92w6" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-sv24q" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-v9nxl" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-wdnrj" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-x4b45" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-x6x6n" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-xzznd" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-z555s" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-zlcd9" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-zm9xs" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-zrxrp" deleted from benchmark-workloads namespace
+config hdb140 ready: 45 workers Running

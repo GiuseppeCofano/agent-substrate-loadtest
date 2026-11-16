@@ -1,0 +1,41 @@
+# Disk rates per node at 120 sessions (Cloud Monitoring, 60 s rate, loadtest.diskmetrics), queried 2026-11-12
+
+## hdb1200, 2026-11-08T20:20Z-20:35Z
+write_bytes_count              node …4ww4 rate-9d55cea8-4ww4 p50    706.2 max    989.0 MB/s
+write_bytes_count              node …jtfn rate-9d55cea8-jtfn p50    742.5 max    933.3 MB/s
+write_bytes_count              node …l8s9 rate-9d55cea8-l8s9 p50    707.8 max   1020.2 MB/s
+read_bytes_count               node …4ww4 rate-9d55cea8-4ww4 p50     52.0 max    128.1 MB/s
+read_bytes_count               node …jtfn rate-9d55cea8-jtfn p50     70.9 max    123.0 MB/s
+read_bytes_count               node …l8s9 rate-9d55cea8-l8s9 p50     53.8 max    113.5 MB/s
+
+## lssd4 (4 devices per node, RAID 0), 2026-11-08T19:30Z-19:45Z
+write_bytes_count              node …6tt1 rate-92a66693-6tt1 p50      2.5 max      3.3 MB/s
+write_bytes_count              node …6tt1 local-ssd-0        p50    210.1 max    297.5 MB/s
+write_bytes_count              node …6tt1 local-ssd-1        p50    209.9 max    297.4 MB/s
+write_bytes_count              node …6tt1 local-ssd-2        p50    209.7 max    297.0 MB/s
+write_bytes_count              node …6tt1 local-ssd-3        p50    209.6 max    296.8 MB/s
+write_bytes_count              node …7rrs rate-92a66693-7rrs p50      2.2 max      3.1 MB/s
+write_bytes_count              node …7rrs local-ssd-0        p50    177.0 max    266.1 MB/s
+write_bytes_count              node …7rrs local-ssd-1        p50    176.9 max    264.1 MB/s
+write_bytes_count              node …7rrs local-ssd-2        p50    177.0 max    263.7 MB/s
+write_bytes_count              node …7rrs local-ssd-3        p50    176.7 max    263.6 MB/s
+write_bytes_count              node …g7xq rate-92a66693-g7xq p50      2.2 max      3.5 MB/s
+write_bytes_count              node …g7xq local-ssd-0        p50    195.1 max    279.2 MB/s
+write_bytes_count              node …g7xq local-ssd-1        p50    194.8 max    279.0 MB/s
+write_bytes_count              node …g7xq local-ssd-2        p50    194.5 max    278.6 MB/s
+write_bytes_count              node …g7xq local-ssd-3        p50    194.5 max    278.3 MB/s
+read_bytes_count               node …6tt1 rate-92a66693-6tt1 p50      0.0 max      0.7 MB/s
+read_bytes_count               node …6tt1 local-ssd-0        p50     19.1 max     80.9 MB/s
+read_bytes_count               node …6tt1 local-ssd-1        p50     19.0 max     80.5 MB/s
+read_bytes_count               node …6tt1 local-ssd-2        p50     18.8 max     80.3 MB/s
+read_bytes_count               node …6tt1 local-ssd-3        p50     18.8 max     80.0 MB/s
+read_bytes_count               node …7rrs rate-92a66693-7rrs p50      0.0 max      0.8 MB/s
+read_bytes_count               node …7rrs local-ssd-0        p50     10.9 max     67.4 MB/s
+read_bytes_count               node …7rrs local-ssd-1        p50     10.8 max     67.1 MB/s
+read_bytes_count               node …7rrs local-ssd-2        p50     10.7 max     66.9 MB/s
+read_bytes_count               node …7rrs local-ssd-3        p50     10.7 max     66.7 MB/s
+read_bytes_count               node …g7xq rate-92a66693-g7xq p50      0.0 max      0.8 MB/s
+read_bytes_count               node …g7xq local-ssd-0        p50     15.2 max     75.3 MB/s
+read_bytes_count               node …g7xq local-ssd-1        p50     15.1 max     75.1 MB/s
+read_bytes_count               node …g7xq local-ssd-2        p50     14.9 max     74.9 MB/s
+read_bytes_count               node …g7xq local-ssd-3        p50     14.9 max     74.7 MB/s

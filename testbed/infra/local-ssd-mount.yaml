@@ -1,0 +1,44 @@
+# Formats each agents-substrate node's Local SSD and mounts it on
+# /var/lib/ate, where atelet keeps actor checkpoints. n2-standard-16 takes Local
+# SSDs in pairs; the first one is used. The boot disk's
+# throughput cap otherwise limits Substrate's suspends (see results/runs).
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: ate-local-ssd
+  namespace: kube-system
+spec:
+  selector:
+    matchLabels: {app: ate-local-ssd}
+  template:
+    metadata:
+      labels: {app: ate-local-ssd}
+    spec:
+      hostPID: true
+      nodeSelector: {cloud.google.com/gke-nodepool: agents-substrate}
+      tolerations: [{operator: Exists}]
+      containers:
+      - name: mount
+        image: debian:12-slim
+        securityContext: {privileged: true}
+        command:
+        - /bin/sh
+        - -c
+        - |
+          set -e
+          dev=/dev/disk/by-id/google-local-nvme-ssd-0
+          nsenter -t 1 -m -- sh -c "
+            set -e
+            if ! mountpoint -q /var/lib/ate; then
+              blkid $dev >/dev/null 2>&1 || mkfs.ext4 -q -F -E nodiscard $dev
+              mkdir -p /var/lib/ate
+              mount -o noatime,discard $dev /var/lib/ate
+            fi
+            df -h /var/lib/ate"
+          touch /tmp/ready
+          sleep infinity
+        readinessProbe:
+          exec: {command: ["test", "-f", "/tmp/ready"]}
+          periodSeconds: 5
+        resources:
+          requests: {cpu: 10m, memory: 16Mi}

@@ -1,0 +1,42 @@
+2026-11-08T22:05:02Z == B1 medium start
+node/gke-substrate-smoke-agents-sandbox-666d73ea-3tkt condition met
+node/gke-substrate-smoke-agents-sandbox-666d73ea-j85h condition met
+node/gke-substrate-smoke-agents-sandbox-666d73ea-nfcg condition met
+No resources found
+namespace/benchmark-sandboxes unchanged
+role.rbac.authorization.k8s.io/agentsession-sandboxes unchanged
+rolebinding.rbac.authorization.k8s.io/agentsession-sandboxes unchanged
+namespace/benchmarking unchanged
+configmap/sandbox-pod-template unchanged
+deployment.apps/locust restarted
+Ensuring benchmarking namespace exists...
+namespace/benchmarking unchanged
+namespace/benchmarking not labeled
+Deploying Locust load (image=europe-west4-docker.pkg.dev/PROJECT_ID/ate-images/locust-test:latest, pull_policy=Always, user_class=agentsession, agentsession_script=<built-in>, sandbox_backend=pod)...
+deployment.apps/locust configured
+service/locust unchanged
+rolebinding.rbac.authorization.k8s.io/benchmarking-permissions unchanged
+deployment.apps/locust patched (no change)
+Waiting for deployment "locust" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "locust" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "locust" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "locust" rollout to finish: 0 of 1 updated replicas are available...
+deployment "locust" successfully rolled out
+2026-11-08T22:52:54Z B1 ts3: capacity 40
+No resources found
+configmap "sandbox-pod-template" deleted from benchmarking namespace
+namespace "benchmark-sandboxes" deleted
+Ensuring benchmarking namespace exists...
+namespace/benchmarking unchanged
+namespace/benchmarking not labeled
+Deploying Locust load (image=europe-west4-docker.pkg.dev/PROJECT_ID/ate-images/locust-test:latest, pull_policy=Always, user_class=agentsession, agentsession_script=<built-in>, sandbox_backend=substrate)...
+deployment.apps/locust configured
+service/locust unchanged
+rolebinding.rbac.authorization.k8s.io/benchmarking-permissions unchanged
+deployment.apps/locust patched (no change)
+Waiting for deployment "locust" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "locust" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "locust" rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for deployment "locust" rollout to finish: 0 of 1 updated replicas are available...
+deployment "locust" successfully rolled out
+2026-11-08T22:55:55Z == B1 medium done

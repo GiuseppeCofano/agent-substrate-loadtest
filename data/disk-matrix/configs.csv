@@ -1,0 +1,12 @@
+config,machine,disk,node_pool_flags,router_parking_budget,fio_seq_write_MBps,capacity_sessions,step_120,path
+n2-pd-balanced-100gb,n2-standard-16,pd-balanced 100 GB (GKE default boot disk),--disk-type=pd-balanced --disk-size=100,5 s,172,20,,data/disk-matrix/n2-pd-balanced-100gb
+n2-pd-balanced-1tb,n2-standard-16,pd-balanced 1 TB boot disk,--disk-type=pd-balanced --disk-size=1024,20 s,441,40,,data/disk-matrix/n2-pd-balanced-1tb
+n2-pd-ssd-100gb,n2-standard-16,pd-ssd 100 GB boot disk,--disk-type=pd-ssd --disk-size=100,20 s,297,40,,data/disk-matrix/n2-pd-ssd-100gb
+n2-pd-ssd-1tb,n2-standard-16,pd-ssd 1 TB boot disk,--disk-type=pd-ssd --disk-size=1024,20 s,757,80,fail,data/disk-matrix/n2-pd-ssd-1tb
+n2-local-ssd-x1,n2-standard-16,"1 Local SSD (raw NVMe), mounted on /var/lib/ate",--local-nvme-ssd-block=count=2 (one device used),5 s,410,20,,data/disk-matrix/n2-local-ssd-x1
+n2-local-ssd-x2-raid0,n2-standard-16,"2 Local SSDs, GKE RAID 0, bind-mounted on /var/lib/ate",--ephemeral-storage-local-ssd=count=2,20 s,817,80,fail,data/disk-matrix/n2-local-ssd-x2-raid0
+n2-local-ssd-x4-raid0,n2-standard-16,"4 Local SSDs, GKE RAID 0, bind-mounted on /var/lib/ate",--ephemeral-storage-local-ssd=count=4,20 s,1595,80,fail,data/disk-matrix/n2-local-ssd-x4-raid0
+n4-hyperdisk-balanced-140,n4-standard-16,"Hyperdisk Balanced boot disk, 140 MiB/s provisioned, 6,000 IOPS",--disk-type=hyperdisk-balanced --disk-size=100 --boot-disk-provisioned-throughput=140 --boot-disk-provisioned-iops=6000,20 s,142,20,,data/disk-matrix/n4-hyperdisk-balanced-140
+n4-hyperdisk-balanced-300,n4-standard-16,"Hyperdisk Balanced boot disk, 300 MiB/s provisioned, 6,000 IOPS",--disk-type=hyperdisk-balanced --disk-size=100 --boot-disk-provisioned-throughput=300 --boot-disk-provisioned-iops=6000,20 s,309,40,,data/disk-matrix/n4-hyperdisk-balanced-300
+n4-hyperdisk-balanced-600,n4-standard-16,"Hyperdisk Balanced boot disk, 600 MiB/s provisioned, 6,000 IOPS",--disk-type=hyperdisk-balanced --disk-size=100 --boot-disk-provisioned-throughput=600 --boot-disk-provisioned-iops=6000,20 s,624,80,fail,data/disk-matrix/n4-hyperdisk-balanced-600
+n4-hyperdisk-balanced-1200,n4-standard-16,"Hyperdisk Balanced boot disk, 1200 MiB/s provisioned, 6,000 IOPS",--disk-type=hyperdisk-balanced --disk-size=100 --boot-disk-provisioned-throughput=1200 --boot-disk-provisioned-iops=6000,20 s,1209,80,fail,data/disk-matrix/n4-hyperdisk-balanced-1200

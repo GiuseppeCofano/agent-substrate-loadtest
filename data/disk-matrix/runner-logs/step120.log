@@ -1,0 +1,12 @@
+2026-11-08T18:30:03Z == step 120 start
+2026-11-08T18:30:03Z config pdssd1t
+2026-11-08T18:53:16Z pdssd1t 120: substrate ts=3 users=120: FAIL ['steps per session 21 < 80% of calibration 38', 'failure ratio 2.20% >= 1%', 'WakeFirstTouch p95 22000 ms > 2000 ms']
+2026-11-08T18:53:16Z config lssd2
+2026-11-08T19:19:32Z lssd2 120: substrate ts=3 users=120: FAIL ['steps per session 23 < 80% of calibration 36', 'failure ratio 1.48% >= 1%', 'WakeFirstTouch p95 21000 ms > 2000 ms']
+2026-11-08T19:19:32Z config lssd4
+2026-11-08T19:45:25Z lssd4 120: substrate ts=3 users=120: FAIL ['Step_20_commit_and_summarize: p95 550 ms > 1.5x calibration 290 ms']
+2026-11-08T19:45:25Z config hdb600
+2026-11-08T20:11:11Z hdb600 120: substrate ts=3 users=120: FAIL ['steps per session 18 < 80% of calibration 37', 'failure ratio 5.05% >= 1%', 'WakeFirstTouch p95 25000 ms > 2000 ms']
+2026-11-08T20:11:11Z config hdb1200
+2026-11-08T20:35:58Z hdb1200 120: substrate ts=3 users=120: FAIL ['WakeFirstTouch p95 16000 ms > 2000 ms']
+2026-11-08T20:38:15Z == step 120 done

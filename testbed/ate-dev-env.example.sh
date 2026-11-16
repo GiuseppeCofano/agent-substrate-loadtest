@@ -1,0 +1,71 @@
+# Copyright 2026 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Example environment variables for Substrate development.
+# Copy this file to .ate-dev-env.sh and customize it for your environment.
+
+export PROJECT_ID=your-project-id
+export PROJECT_NUMBER=$(gcloud projects describe ${PROJECT_ID} --format="value(projectNumber)")
+
+export GCE_REGION=europe-west4
+export CLUSTER_LOCATION=europe-west4-a
+
+export NETWORK=substrate-net
+export SUBNETWORK=substrate-subnet
+
+export CLUSTER_NAME=substrate-smoke
+# Supported: 1.36 with the v1beta1 PodCertificate APIs enabled, which setup-gcp
+# does, or 1.37+, which serves them under v1. Anything below 1.36 does not
+# work. GKE retires patch versions over time — if cluster creation rejects
+# this pin, pick a current one from:
+#   gcloud container get-server-config --zone ${CLUSTER_LOCATION} --format="value(defaultClusterVersion)"
+# See tools/setup-gcp/README.md ("Create Cluster") for the full constraint.
+export CLUSTER_VERSION=1.37.1-gke.3020000
+export NODE_POOL_NAME=gvisor-pool
+export NODE_POOL_VERSION=1.37.1-gke.3020000
+export NODE_MACHINE_TYPE=n2-standard-4
+# Enable nested virtualization (required for microVMs)
+export ENABLE_NESTED_VIRTUALIZATION=false
+# Boot disk customizations (optional; defaults to GKE's default boot disk)
+# export BOOT_DISK_SIZE_GB=500
+# export BOOT_DISK_TYPE=hyperdisk-balanced
+
+# Set this if you are using an existing cluster with a different context name.
+
+
+export BUCKET_NAME=snapshot-substrate-test-${PROJECT_ID}
+# Cluster-wide location ate-api-server stores snapshots under.
+export SNAPSHOT_LOCATION="gs://${BUCKET_NAME}/"
+# Google service account snapshot transfers run as on GCS. setup-gcp creates
+# it, and ate-setup and hack/teardown.sh read the same name.
+export SNAPSHOT_TRANSFER_GSA_NAME=ate-snapshot-transfer
+
+export KO_DOCKER_REPO="europe-west4-docker.pkg.dev/${PROJECT_ID}/ate-images"
+
+# Credential provider the egress gateway injects credentials from, as JSON; the
+# install requires a choice. {"name":"k8s.io"} deploys the bundled Kubernetes
+# Secrets provider, with a NetworkPolicy that admits only the egress gateway;
+# {"enabled":false} turns egress credential injection off, and is the only choice
+# on the agentgateway dataplane; {"name":"<provider>","address":"<host>:<port>"}
+# uses a provider you deploy yourself. See docs/egress-credential-injection.md.
+export ATE_CREDENTIAL_PROVIDER='{"name":"k8s.io"}'
+
+# Set this if you want to override the default build platforms
+export KO_DEFAULTPLATFORMS=linux/amd64
+export ENABLE_PRIVATE_NODES=true
+# Local additions for the load test.
+export KUBECTL_CONTEXT=gke_PROJECT_ID_europe-west4-a_substrate-smoke
+export ATE_API_AUTHZ_BOOTSTRAP_OWNERS=system:serviceaccount:ate-system:ate-client,spiffe://cluster.local/ns/benchmarking/sa/default
+export ATE_INGRESS_ALLOWED_SPIFFE_IDS=spiffe://cluster.local/ns/benchmarking/sa/default
+export WORKLOAD_TEMPLATES="sleep glutton"

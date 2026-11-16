@@ -1,0 +1,64 @@
+2026-11-07T21:41:42Z == disk matrix start
+2026-11-07T21:41:42Z config lssd2
+2026-11-07T22:39:33Z ladder lssd2: capacity 80
+2026-11-07T22:39:33Z config lssd4
+2026-11-07T22:42:32Z FAILED at line 33
+ERROR: (gcloud.container.clusters.resize) No node pool named 'agents-substrate' in substrate-smoke.
+Please specify one of the following node pools:
+substrate-node-pool
+postgres
+agents-sandbox
+2026-11-08 budget 20s from here
+2026-11-08T07:52:23Z == disk matrix start
+2026-11-08T07:52:23Z config lssd2
+2026-11-08T07:52:29Z FAILED at line 33
+ERROR: (gcloud.container.clusters.resize) No node pool named 'agents-substrate' in substrate-smoke.
+Please specify one of the following node pools:
+substrate-node-pool
+postgres
+agents-sandbox
+2026-11-08T08:12:47Z == disk matrix start
+2026-11-08T08:12:47Z config lssd2
+2026-11-08T09:12:28Z ladder lssd2: capacity 80
+2026-11-08T09:12:28Z config lssd4
+fio results in ~/substrate-loadtest/results/disks/lssd4/fio.log (node gke-substrate-smoke-agents-substrate-841606f7-b7jj)
+2026-11-08T09:22:09Z fio lssd4:   seqwrite1        1595 MB/s      1521 IOPS  lat p50   10.94 ms  p99   22.15 ms
+2026-11-08T10:18:56Z ladder lssd4: capacity 80
+2026-11-08T10:18:56Z config pdssd1t
+fio results in ~/substrate-loadtest/results/disks/pdssd1t/fio.log (node gke-substrate-smoke-agents-substrate-3308ae98-3qfl)
+2026-11-08T10:28:13Z fio pdssd1t:   seqwrite1         757 MB/s       722 IOPS  lat p50   21.63 ms  p99   49.55 ms
+2026-11-08T11:25:17Z ladder pdssd1t: capacity 80
+2026-11-08T11:25:17Z config pdssd100
+fio results in ~/substrate-loadtest/results/disks/pdssd100/fio.log (node gke-substrate-smoke-agents-substrate-27d5ba75-37dp)
+2026-11-08T11:34:09Z fio pdssd100:   seqwrite1         297 MB/s       283 IOPS  lat p50   55.31 ms  p99  110.62 ms
+2026-11-08T12:21:00Z ladder pdssd100: capacity 40
+2026-11-08T12:21:00Z config pdb1t
+fio results in ~/substrate-loadtest/results/disks/pdb1t/fio.log (node gke-substrate-smoke-agents-substrate-74593fce-6hng)
+2026-11-08T12:29:51Z fio pdb1t:   seqwrite1         441 MB/s       420 IOPS  lat p50   37.49 ms  p99   72.88 ms
+2026-11-08T13:16:24Z ladder pdb1t: capacity 40
+2026-11-08T13:16:24Z config pdb100
+fio results in ~/substrate-loadtest/results/disks/pdb100/fio.log (node gke-substrate-smoke-agents-substrate-71050705-51pj)
+2026-11-08T13:25:27Z fio pdb100:   seqwrite1         172 MB/s       164 IOPS  lat p50   94.90 ms  p99  200.28 ms
+2026-11-08T13:25:27Z config lssd1
+fio results in ~/substrate-loadtest/results/disks/lssd1/fio.log (node gke-substrate-smoke-agents-substrate-2b170456-4mvf)
+2026-11-08T13:34:32Z fio lssd1:   seqwrite1         410 MB/s       391 IOPS  lat p50   41.16 ms  p99   79.17 ms
+2026-11-08T13:36:54Z == disk matrix done
+2026-11-08T13:37:34Z == starting N4 Hyperdisk series
+2026-11-08T13:37:35Z == disk matrix start
+2026-11-08T13:37:35Z config hdb140
+fio results in ~/substrate-loadtest/results/disks/hdb140/fio.log (node gke-substrate-smoke-agents-substrate-f880574c-1kfd)
+2026-11-08T13:44:45Z fio hdb140:   seqwrite1         142 MB/s       136 IOPS  lat p50  113.77 ms  p99  248.51 ms
+2026-11-08T14:22:05Z ladder hdb140: capacity 20
+2026-11-08T14:22:05Z config hdb300
+fio results in ~/substrate-loadtest/results/disks/hdb300/fio.log (node gke-substrate-smoke-agents-substrate-1907d3be-85hn)
+2026-11-08T14:30:59Z fio hdb300:   seqwrite1         309 MB/s       295 IOPS  lat p50   53.22 ms  p99  110.62 ms
+2026-11-08T15:18:02Z ladder hdb300: capacity 40
+2026-11-08T15:18:02Z config hdb600
+fio results in ~/substrate-loadtest/results/disks/hdb600/fio.log (node gke-substrate-smoke-agents-substrate-6f5277d2-53mm)
+2026-11-08T15:27:03Z fio hdb600:   seqwrite1         624 MB/s       595 IOPS  lat p50   26.61 ms  p99   58.46 ms
+2026-11-08T16:24:03Z ladder hdb600: capacity 80
+2026-11-08T16:24:03Z config hdb1200
+fio results in ~/substrate-loadtest/results/disks/hdb1200/fio.log (node gke-substrate-smoke-agents-substrate-9647e691-0cxc)
+2026-11-08T16:33:03Z fio hdb1200:   seqwrite1        1209 MB/s      1153 IOPS  lat p50   13.17 ms  p99   56.89 ms
+2026-11-08T17:29:50Z ladder hdb1200: capacity 80
+2026-11-08T17:32:02Z == disk matrix done

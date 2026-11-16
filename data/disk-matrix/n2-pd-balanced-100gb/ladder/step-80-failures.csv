@@ -1,0 +1,113 @@
+Method,Name,Error,Occurrences
+summary,TimeToWake,/ping: HTTP 503: actor benchmark/agent-1317c9eb-d3e5-4691-9e98-305d342f7c5c unavailable: no worker has room for the actor,2
+grpc,SuspendActorAsync,rpc error: code = Aborted desc = another operation is in progress for this actor,123
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-06a3de29-154a-4526-a6c4-28425375926a unavailable: no worker has room for the actor,9
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-0bd30ae1-57e5-4753-ac85-ea0d45ab0a28 unavailable: no worker has room for the actor,10
+grpc,SuspendActorAsync,"rpc error: code = FailedPrecondition desc = MarkSuspending prerequisite not met for Actor: benchmark/agent-6b1b2518-7a82-4b7c-93c3-aeef1e9286f0 (got: ACTOR_STATE_CRASHED, want ACTOR_STATE_RUNNING)",1
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-b5d2d664-32f5-497e-928c-01c642da93ea unavailable: no worker has room for the actor,12
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-dc2dc2ec-d8f9-406d-b97c-41050beef48a unavailable: no worker has room for the actor,13
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-f95d1849-f433-4036-9720-5c2da608c54b unavailable: no worker has room for the actor,18
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-2ab8a65b-94f4-4f63-beff-fa940559f976 unavailable: no worker has room for the actor,11
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-b8252f32-dc21-4e1e-8f2c-e1e72c6922d8 unavailable: no worker has room for the actor,9
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-85cb0a51-165a-45b5-8e7f-9553fc06ea8d unavailable: no worker has room for the actor,12
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-27d8e23b-1e81-4b99-8a8d-42da87ca9237 unavailable: no worker has room for the actor,4
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-7f5f6681-b564-4fec-8f9f-3d501c9ccbaf unavailable: no worker has room for the actor,10
+http,WakeFirstTouch,/ping: HTTP 504: ,1478
+summary,TimeToWake,/ping: HTTP 503: actor benchmark/agent-a196fa04-1923-47a5-a9fb-a32f9a0f90c2 unavailable: no worker has room for the actor,1
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-432ea413-0953-4bf3-9722-46d2dfdd68fc unavailable: no worker has room for the actor,10
+grpc,SuspendActorAsync,"rpc error: code = FailedPrecondition desc = MarkSuspending prerequisite not met for Actor: benchmark/agent-65a52730-45ce-4571-9802-54b6ba18d867 (got: ACTOR_STATE_CRASHED, want ACTOR_STATE_RUNNING)",1
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-d7e5beaa-b5bb-4bf7-809f-596832dcbb20 unavailable: no worker has room for the actor,8
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-f13e86f5-5326-44eb-b2a9-5073e2a1155b unavailable: no worker has room for the actor,15
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-d678bd20-9282-45ff-a9fc-39d0400e8e53 unavailable: no worker has room for the actor,6
+grpc,SuspendActorAsync,rpc error: code = Internal desc = internal server error: workflow failed at step CallAteletSuspend: actor benchmark/agent-65a52730-45ce-4571-9802-54b6ba18d867 crashed: rpc error: code = Internal desc = while calling worker CheckpointWorkload: rpc error: code = Internal desc = while checkpointing the sandbox: while running `runsc checkpoint`: exit status 128,1
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-93f65c16-bef1-45a3-8f84-c7199cbf8d24 unavailable: no worker has room for the actor,8
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-d4594743-e383-421b-b6e0-6550034d2c9c unavailable: no worker has room for the actor,14
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-372f6200-aa53-4151-90a1-9d1b4eb18aa4 unavailable: no worker has room for the actor,11
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-5ddee01e-dd10-4dab-a6b6-de1c7784fce1 unavailable: no worker has room for the actor,16
+grpc,SuspendActorAsync,rpc error: code = DeadlineExceeded desc = context deadline exceeded,10
+grpc,SuspendActorAsync,rpc error: code = Internal desc = internal server error: workflow failed at step CallAteletSuspend: actor benchmark/agent-6b1b2518-7a82-4b7c-93c3-aeef1e9286f0 crashed: rpc error: code = Internal desc = while calling worker CheckpointWorkload: rpc error: code = Internal desc = while checkpointing the sandbox: while running `runsc checkpoint`: exit status 128,1
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-53421c10-5cbb-4985-a88d-cf6c9303adb5 unavailable: no worker has room for the actor,10
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-b7d7dcf1-9c10-4e96-a829-b7e615b7b3a9 unavailable: no worker has room for the actor,7
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-8eb5fdba-2ab4-435b-af85-1fe10f132cef unavailable: no worker has room for the actor,12
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-8e4e1198-ec4c-4cb3-a056-be61272bbf91 unavailable: no worker has room for the actor,14
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-8c163ee4-0e35-4fe8-a316-6a415e4ad8ad unavailable: no worker has room for the actor,12
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-12f56031-6866-4fbf-aae6-4d84bfa2183e unavailable: no worker has room for the actor,11
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-3fa0e887-142e-46d8-9211-096e8de0fc7c unavailable: no worker has room for the actor,5
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-7337293f-103d-4a3c-bd4c-9b6cc3bb7cae unavailable: no worker has room for the actor,9
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-5f77581b-fb9a-4d91-811c-293c59c524a3 unavailable: no worker has room for the actor,15
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-63f80763-a44b-4879-a71f-dcfde14cbd1f unavailable: no worker has room for the actor,13
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-6dfce207-def3-44ed-9ac6-ec8e17644cc1 unavailable: no worker has room for the actor,15
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-0057d7da-2f0c-4f66-b680-7b951fe05f8f unavailable: no worker has room for the actor,11
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-fed26fad-7e26-4838-a78b-323c65ee0bfc unavailable: no worker has room for the actor,12
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-6f2d8f58-55c6-443a-814b-6edd689da17a unavailable: no worker has room for the actor,19
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-a196fa04-1923-47a5-a9fb-a32f9a0f90c2 unavailable: no worker has room for the actor,7
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-df1d9f39-cf26-403a-873d-e1209f23b84e unavailable: no worker has room for the actor,9
+summary,TimeToWake,/ping: HTTP 504: ,76
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-1317c9eb-d3e5-4691-9e98-305d342f7c5c unavailable: no worker has room for the actor,9
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-c523da8b-907a-4001-aecc-fe902de5c406 unavailable: no worker has room for the actor,9
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-b8d5cb15-e838-4a66-8c65-dcd15347a01c unavailable: no worker has room for the actor,12
+summary,TimeToWake,/ping: HTTP 503: actor benchmark/agent-93f65c16-bef1-45a3-8f84-c7199cbf8d24 unavailable: no worker has room for the actor,1
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-6fb8f0cf-f886-41f4-86ac-f946084edd26 unavailable: no worker has room for the actor,13
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-206ee537-8544-401d-ac48-afe3651290b9 unavailable: no worker has room for the actor,2
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-f2304287-3909-4ee9-aa12-c5afe373acd2 unavailable: no worker has room for the actor,19
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-bdf37312-8ebe-4469-9ce1-4241b77faf28 unavailable: no worker has room for the actor,16
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-ed44815f-5e61-477e-8d36-11e1424b232d unavailable: no worker has room for the actor,3
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-23646ea8-f416-4d97-91c1-853b5c5fd8dd unavailable: no worker has room for the actor,4
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-d2a7250e-f446-467f-a9f3-899688818787 unavailable: no worker has room for the actor,13
+summary,TimeToWake,/ping: HTTP 503: actor benchmark/agent-6fb8f0cf-f886-41f4-86ac-f946084edd26 unavailable: no worker has room for the actor,1
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-33f3ee9d-f44d-4c8b-8121-8f57e37f3248 unavailable: no worker has room for the actor,11
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-3fa6aee6-11f9-4e55-a919-b6194da67e93 unavailable: no worker has room for the actor,6
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-cd7e9d87-b231-4d0e-a332-d49098328542 unavailable: no worker has room for the actor,12
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-c27d1b13-c53e-4fec-a473-a8907a3fd93b unavailable: no worker has room for the actor,2
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-b08c6edb-2c97-4b87-9b4f-97aff0afd382 unavailable: no worker has room for the actor,3
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-9a26e54c-62fe-49c4-b021-7d3517f429ca unavailable: no worker has room for the actor,13
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-6d61117d-6fb1-4892-b832-a899a4a95e57 unavailable: no worker has room for the actor,12
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-c1221445-c94b-4510-be10-29fe8ea70290 unavailable: no worker has room for the actor,12
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-e977152f-fa19-4fc4-9074-44777c194822 unavailable: no worker has room for the actor,12
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-fe3532ed-0b9b-4a4e-a799-608ac98f5171 unavailable: no worker has room for the actor,9
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-e3268c77-3b22-4420-a280-7271914938d4 unavailable: no worker has room for the actor,7
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-a1f65efa-4435-47ae-a6d8-a00337fb9409 unavailable: no worker has room for the actor,13
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-a01a6efa-77c1-4630-8f1f-3137d8196a9d unavailable: no worker has room for the actor,18
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-f5318b36-3718-4719-91cc-bbaf9140e21e unavailable: no worker has room for the actor,5
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-34c1b60e-2009-44ac-920a-f0018ee4f24b unavailable: no worker has room for the actor,8
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-e46c0f78-f4d3-448d-9f74-0c26e9d2a3dd unavailable: no worker has room for the actor,12
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-6c21dcd0-0418-46ef-ba7f-c89c997f8dc9 unavailable: no worker has room for the actor,15
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-4aaab4fe-86a5-46b5-b9ce-6c3063334537 unavailable: no worker has room for the actor,11
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-713658aa-af21-4013-b263-24104fbf29a1 unavailable: no worker has room for the actor,8
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-fda66e2a-c83c-40f9-a5ff-36ee74060e22 unavailable: no worker has room for the actor,12
+grpc,DeleteActor,rpc error: code = Aborted desc = another operation is in progress for this actor,17
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-1eb58a31-ef85-41b5-a7b9-82723f52fa53 unavailable: no worker has room for the actor,13
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-65a52730-45ce-4571-9802-54b6ba18d867 unavailable: no worker has room for the actor,5
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-ad2664be-9988-4aa8-b1a8-94c172dfe9b8 unavailable: no worker has room for the actor,3
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-61ce5933-59ab-481c-8671-192b608c967d unavailable: no worker has room for the actor,19
+summary,TimeToWake,/ping: HTTP 503: actor benchmark/agent-8c163ee4-0e35-4fe8-a316-6a415e4ad8ad unavailable: no worker has room for the actor,1
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-7ee95715-4749-4db4-9445-c9d663dfdb1a unavailable: no worker has room for the actor,12
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-10b10df4-5485-432e-b098-4cb99ec3108e unavailable: no worker has room for the actor,12
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-ec249b79-b38e-41d1-a132-2d7091bc37e1 unavailable: no worker has room for the actor,15
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-4acb1880-cc80-4618-a50a-8031a5c0cb87 unavailable: no worker has room for the actor,15
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-4c790af2-9b09-43c6-9720-39e5dddaab24 unavailable: no worker has room for the actor,3
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-be1d603e-4045-42eb-af90-59c90a9923c3 unavailable: no worker has room for the actor,18
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-85882f54-a493-4444-8412-fd9fd1fe9561 unavailable: no worker has room for the actor,1
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-1d57fad1-7be1-4268-bfd9-701f4975eb52 unavailable: no worker has room for the actor,4
+summary,TimeToWake,/ping: HTTP 503: actor benchmark/agent-fda66e2a-c83c-40f9-a5ff-36ee74060e22 unavailable: no worker has room for the actor,1
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-05816293-5e81-47e8-a07e-16390e043215 unavailable: no worker has room for the actor,8
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-917b0645-1873-4673-92ce-7f8e50f1e584 unavailable: no worker has room for the actor,7
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-f6838ecd-9c8d-4337-b583-646d656116c8 unavailable: no worker has room for the actor,1
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-41546acc-86c7-4c3d-8c62-a5fca510c038 unavailable: no worker has room for the actor,2
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-3583a1da-eefa-4902-bb27-1c25c6358ec6 unavailable: no worker has room for the actor,10
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-141919f0-ae7d-4887-b281-cf92ec8d005a unavailable: no worker has room for the actor,17
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-bfb24fbd-62a8-4abc-a1b3-a8c9fb44f1a7 unavailable: no worker has room for the actor,14
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-53a0c317-aa02-4996-9481-b4013927dc9a unavailable: no worker has room for the actor,7
+grpc,SuspendActorAsync,rpc error: code = DeadlineExceeded desc = stream terminated by RST_STREAM with error code: CANCEL,3
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-fc45069e-7ffc-4011-9708-6f570df450c4 unavailable: no worker has room for the actor,12
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-f90db665-4f95-4909-b523-c033584ad99b unavailable: no worker has room for the actor,14
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-c29d09f7-24f2-483c-88b9-28ac0cbd8a31 unavailable: no worker has room for the actor,14
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-2ed68aed-c03f-408c-a5b1-fcb9f557f08d unavailable: no worker has room for the actor,15
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-9c010b17-d18c-43e1-9ffe-f28197c49278 unavailable: no worker has room for the actor,13
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-787f5b9a-1efc-4358-b0cf-13fd545d30f9 unavailable: no worker has room for the actor,8
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-71b1503a-1b71-4ec4-869b-0ec3bf92db93 unavailable: no worker has room for the actor,12
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-73465cae-7359-4667-a05e-3fab113263e7 unavailable: no worker has room for the actor,3
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-d0d93552-b733-4c07-8252-dd5514010891 unavailable: no worker has room for the actor,14
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-b4f7e881-4dba-473d-ad81-f1ec41c83cdf unavailable: no worker has room for the actor,2
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-6a226a1a-1be8-4aa8-8621-a93382642b9d unavailable: no worker has room for the actor,16
+http,WakeFirstTouch,/ping: HTTP 503: actor benchmark/agent-eadf7359-f28f-4bff-8b61-92ab4f289c46 unavailable: no worker has room for the actor,20

@@ -1,0 +1,44 @@
+# For pools created with --ephemeral-storage-local-ssd: GKE stripes the Local
+# SSDs into one RAID 0 array for kubelet and containerd. This bind-mounts a
+# directory on that array onto /var/lib/ate, where atelet keeps checkpoints.
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: ate-local-ssd
+  namespace: kube-system
+spec:
+  selector:
+    matchLabels: {app: ate-local-ssd}
+  template:
+    metadata:
+      labels: {app: ate-local-ssd}
+    spec:
+      hostPID: true
+      nodeSelector: {cloud.google.com/gke-nodepool: agents-substrate}
+      tolerations: [{operator: Exists}]
+      containers:
+      - name: mount
+        image: debian:12-slim
+        securityContext: {privileged: true}
+        command:
+        - /bin/sh
+        - -c
+        - |
+          set -e
+          nsenter -t 1 -m -- sh -c '
+            set -e
+            if ! mountpoint -q /var/lib/ate; then
+              dev=$(ls /dev/md* 2>/dev/null | head -1)
+              target=$(findmnt -n -o TARGET --source "$dev" | head -1)
+              [ -n "$target" ] || { echo "no RAID array mounted"; exit 1; }
+              mkdir -p "$target/ate" /var/lib/ate
+              mount --bind "$target/ate" /var/lib/ate
+            fi
+            df -h /var/lib/ate; cat /proc/mdstat | head -3'
+          touch /tmp/ready
+          sleep infinity
+        readinessProbe:
+          exec: {command: ["test", "-f", "/tmp/ready"]}
+          periodSeconds: 5
+        resources:
+          requests: {cpu: 10m, memory: 16Mi}

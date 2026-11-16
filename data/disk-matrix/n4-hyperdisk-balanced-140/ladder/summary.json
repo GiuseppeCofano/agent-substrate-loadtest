@@ -1,0 +1,26 @@
+{
+  "platform": "substrate",
+  "think_scale": 3.0,
+  "repeat": 1,
+  "steps": [
+    {
+      "users": 10,
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "users": 20,
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "users": 40,
+      "passed": false,
+      "reasons": [
+        "steps per session 20 < 80% of calibration 37"
+      ]
+    }
+  ],
+  "capacity": 20,
+  "evaluated_with": "pass rules of 2026-11-08 (1.5x or +250 ms, 1% failures, 80% throughput, wake p95 2 s)"
+}

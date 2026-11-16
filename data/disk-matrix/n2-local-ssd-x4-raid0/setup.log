@@ -1,0 +1,83 @@
+Deleting node pool agents-substrate...
+....................................................................................................done.
+Deleted [https://container.googleapis.com/v1/projects/PROJECT_ID/zones/europe-west4-a/clusters/substrate-smoke/nodePools/agents-substrate].
+ERROR: (gcloud.container.node-pools.create) ResponseError: code=400, message=The user does not have access to service account "PROJECT_NUMBER-compute@developer.gserviceaccount.com". Ask a project owner to grant you the iam.serviceAccountUser role on the service account.
+Deleting node pool agents-substrate...
+....................................................................................................done.
+Deleted [https://container.googleapis.com/v1/projects/PROJECT_ID/zones/europe-west4-a/clusters/substrate-smoke/nodePools/agents-substrate].
+Creating node pool agents-substrate...
+....................................................................................................done.
+Created [https://container.googleapis.com/v1/projects/PROJECT_ID/zones/europe-west4-a/clusters/substrate-smoke/nodePools/agents-substrate].
+NAME              MACHINE_TYPE    DISK_SIZE_GB  NODE_VERSION
+agents-substrate  n2-standard-16  100           1.37.1-gke.3020000
+daemonset.apps "ate-local-ssd" deleted from kube-system namespace
+daemonset.apps/ate-local-ssd created
+node/gke-substrate-smoke-agents-substrate-841606f7-b7jj condition met
+node/gke-substrate-smoke-agents-substrate-841606f7-g4m6 condition met
+node/gke-substrate-smoke-agents-substrate-841606f7-prx6 condition met
+daemon set "ate-local-ssd" successfully rolled out
+/dev/md0        1.5T  7.6G  1.4T   1% /var/lib/ate
+Personalities : [raid0] 
+md0 : active raid0 nvme0n4[3] nvme0n3[2] nvme0n2[1] nvme0n1[0]
+      1572335616 blocks super 1.2 512k chunks
+/dev/md0        1.5T  7.6G  1.4T   1% /var/lib/ate
+Personalities : [raid0] 
+md0 : active raid0 nvme0n4[3] nvme0n3[2] nvme0n2[1] nvme0n1[0]
+      1572335616 blocks super 1.2 512k chunks
+/dev/md0        1.5T  7.9G  1.4T   1% /var/lib/ate
+Personalities : [raid0] 
+md0 : active raid0 nvme0n4[3] nvme0n3[2] nvme0n2[1] nvme0n1[0]
+      1572335616 blocks super 1.2 512k chunks
+pod "atelet-nxqww" deleted from ate-system namespace
+pod "atelet-rzr9b" deleted from ate-system namespace
+pod "atelet-9m4gd" deleted from ate-system namespace
+Waiting for daemon set "atelet" rollout to finish: 0 of 3 updated pods are available...
+Waiting for daemon set "atelet" rollout to finish: 1 of 3 updated pods are available...
+Waiting for daemon set "atelet" rollout to finish: 2 of 3 updated pods are available...
+daemon set "atelet" successfully rolled out
+pod "benchmark-worker-659c9c875f-2wdsj" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-4bjlf" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-4hxcp" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-4m2pd" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-5kp5n" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-67fcg" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-67vrw" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-6rhvv" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-7wkk9" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-875mb" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-8q8fd" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-9b2s6" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-9w9sb" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-c2s2b" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-c5mpt" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-ctnrz" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-d576m" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-d8bkk" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-d9cmj" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-g9rvr" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-gcrcx" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-gvjnj" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-j9hfh" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-lljkp" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-m56wm" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-n8m9h" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-njzlw" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-nv5fv" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-p5xr4" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-pqfpm" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-qjpmv" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-qktqc" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-ql8t7" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-qmfzd" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-r4bq4" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-rqqlz" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-sf46b" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-sltsn" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-svkw9" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-swtzx" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-tkk2n" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-tsvfb" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-w4b7d" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-x25l6" deleted from benchmark-workloads namespace
+pod "benchmark-worker-659c9c875f-xx5zk" deleted from benchmark-workloads namespace
+config lssd4 ready: 45 workers Running

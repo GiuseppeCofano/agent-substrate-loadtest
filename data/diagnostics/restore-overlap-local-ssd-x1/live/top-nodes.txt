@@ -1,0 +1,36 @@
+== 2026-11-07T20:54:57Z
+gke-substrate-smoke-agents-substrate-8ed414fa-7ckb   2012m   12%   2559Mi   4%    
+gke-substrate-smoke-agents-substrate-8ed414fa-lgms   1207m   7%    2445Mi   3%    
+gke-substrate-smoke-agents-substrate-8ed414fa-rfbz   1598m   10%   2767Mi   4%    
+== 2026-11-07T20:55:59Z
+gke-substrate-smoke-agents-substrate-8ed414fa-7ckb   2123m   13%   2243Mi   3%    
+gke-substrate-smoke-agents-substrate-8ed414fa-lgms   718m    4%    2947Mi   4%    
+gke-substrate-smoke-agents-substrate-8ed414fa-rfbz   895m    5%    1903Mi   3%    
+== 2026-11-07T20:57:00Z
+gke-substrate-smoke-agents-substrate-8ed414fa-7ckb   1943m   12%   3431Mi   5%    
+gke-substrate-smoke-agents-substrate-8ed414fa-lgms   2076m   13%   2625Mi   4%    
+gke-substrate-smoke-agents-substrate-8ed414fa-rfbz   2314m   14%   3240Mi   5%    
+== 2026-11-07T20:58:01Z
+gke-substrate-smoke-agents-substrate-8ed414fa-7ckb   2302m   14%   2591Mi   4%    
+gke-substrate-smoke-agents-substrate-8ed414fa-lgms   2869m   18%   2473Mi   3%    
+gke-substrate-smoke-agents-substrate-8ed414fa-rfbz   3640m   22%   2561Mi   4%    
+== 2026-11-07T20:59:02Z
+gke-substrate-smoke-agents-substrate-8ed414fa-7ckb   1971m   12%   4324Mi   6%    
+gke-substrate-smoke-agents-substrate-8ed414fa-lgms   1486m   9%    2460Mi   3%    
+gke-substrate-smoke-agents-substrate-8ed414fa-rfbz   1485m   9%    2272Mi   3%    
+== 2026-11-07T21:00:04Z
+gke-substrate-smoke-agents-substrate-8ed414fa-7ckb   3831m   24%   2978Mi   4%    
+gke-substrate-smoke-agents-substrate-8ed414fa-lgms   1366m   8%    2917Mi   4%    
+gke-substrate-smoke-agents-substrate-8ed414fa-rfbz   3521m   22%   3548Mi   5%    
+== 2026-11-07T21:01:05Z
+gke-substrate-smoke-agents-substrate-8ed414fa-7ckb   1771m   11%   3625Mi   5%    
+gke-substrate-smoke-agents-substrate-8ed414fa-lgms   1782m   11%   2688Mi   4%    
+gke-substrate-smoke-agents-substrate-8ed414fa-rfbz   1730m   10%   2801Mi   4%    
+== 2026-11-07T21:02:06Z
+gke-substrate-smoke-agents-substrate-8ed414fa-7ckb   3228m   20%   3217Mi   5%    
+gke-substrate-smoke-agents-substrate-8ed414fa-lgms   2155m   13%   2651Mi   4%    
+gke-substrate-smoke-agents-substrate-8ed414fa-rfbz   2212m   13%   2207Mi   3%    
+== 2026-11-07T21:03:07Z
+gke-substrate-smoke-agents-substrate-8ed414fa-7ckb   3960m   24%   2897Mi   4%    
+gke-substrate-smoke-agents-substrate-8ed414fa-lgms   1277m   8%    3504Mi   5%    
+gke-substrate-smoke-agents-substrate-8ed414fa-rfbz   2381m   14%   2478Mi   3%    

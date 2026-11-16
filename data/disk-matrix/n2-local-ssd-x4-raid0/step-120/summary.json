@@ -1,0 +1,16 @@
+{
+  "platform": "substrate",
+  "think_scale": 3.0,
+  "repeat": 1,
+  "steps": [
+    {
+      "users": 120,
+      "passed": false,
+      "reasons": [
+        "Step_20_commit_and_summarize: p95 550 ms > 1.5x calibration 290 ms"
+      ]
+    }
+  ],
+  "capacity": 0,
+  "evaluated_with": "pass rules of 2026-11-08 (1.5x or +250 ms, 1% failures, 80% throughput, wake p95 2 s)"
+}

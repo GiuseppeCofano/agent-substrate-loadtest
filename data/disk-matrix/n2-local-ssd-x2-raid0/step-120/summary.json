@@ -1,0 +1,18 @@
+{
+  "platform": "substrate",
+  "think_scale": 3.0,
+  "repeat": 1,
+  "steps": [
+    {
+      "users": 120,
+      "passed": false,
+      "reasons": [
+        "steps per session 23 < 80% of calibration 36",
+        "failure ratio 1.48% >= 1%",
+        "WakeFirstTouch p95 21000 ms > 2000 ms"
+      ]
+    }
+  ],
+  "capacity": 0,
+  "evaluated_with": "pass rules of 2026-11-08 (1.5x or +250 ms, 1% failures, 80% throughput, wake p95 2 s)"
+}

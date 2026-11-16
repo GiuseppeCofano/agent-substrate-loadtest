@@ -1,0 +1,38 @@
+{
+  "platform": "substrate",
+  "think_scale": 3.0,
+  "repeat": 1,
+  "steps": [
+    {
+      "users": 10,
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "users": 20,
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "users": 40,
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "users": 80,
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "users": 160,
+      "passed": false,
+      "reasons": [
+        "steps per session 12 < 80% of calibration 38",
+        "failure ratio 16.06% >= 1%",
+        "WakeFirstTouch p95 25000 ms > 2000 ms"
+      ]
+    }
+  ],
+  "capacity": 80,
+  "evaluated_with": "pass rules of 2026-11-08 (1.5x or +250 ms, 1% failures, 80% throughput, wake p95 2 s)"
+}
